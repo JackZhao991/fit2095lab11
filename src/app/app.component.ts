@@ -39,7 +39,7 @@ export class AppComponent {
   ];
 
   constructor () {
-    this.socket = io.connect("http://192.168.1.43:8080");
+    this.socket = io.connect("http://localhost:8080");
     monkeyPatchChartJsTooltip();
     monkeyPatchChartJsLegend();
   }
